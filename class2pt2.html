@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function info()
+        {
+            let age = parseInt(prompt("a value is",)); 
+            //prompt is used for input
+            //parseint converts from string to integer
+
+            if(age>=18)
+            {
+                //alert("you are eligible for vote");
+                let c=confirm("do you want to submit ur vote");
+                if(c)
+                {
+                    alert("your response submitted");
+                }
+
+                else
+                {
+                    alert("your response not submitted");
+                }
+
+            }
+            else
+            {
+                alert("you are no eligbile for vote");
+
+            }
+        }
+            //alert gives pop msg without restoring page
+            //confirm() gives a pop msg too but for confirmation (true or false)
+            //like if i want to submit my response or not
+    </script>
+</head>
+<body>
+    <input type="button" onclick="info()" value="result">
+</body>
+</html>
